@@ -1,38 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="./assets/images/favicon-32x32.png"
-/>
-<link rel="stylesheet" href="./assets/css/reset.css">
-<link rel="stylesheet" href="./assets/css/style.css">
-<title>Frontend Mentor | Order summary card</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <main class="container">
+      <article class="article">
+        <header class="article__header">
+          <img
+            src="./assets/images/illustration-hero.svg"
+            alt=""
+            class="article__hero"
+          />
+        </header>
+        <main class="article__mainContent">
+          <h1 class="article__title article__title--mainTitle">
+            Order Summary
+          </h1>
+          <p class="article__texte">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <section class="article__orderSummary">
+            <div class='article__orderItem'>
+              <img
+                src="./assets/images/icon-music.svg"
+                alt=""
+                class="article__icon article__icon--music"
+              />
+              <div>
+                <h2 class="article__title article__title--subTitle">
+                  Annual Plan
+                </h2>
+                <p class="article__texte">$59.99/year</p>
+              </div>
+            </div>
+            <a href="" class="article__link">Change</a>
+          </section>
+        </main>
+        <footer class="article__footer">
+          <nav class="article__nav">
+            <a href="" class="article__link article__link--button"
+              >Proceed to Payment</a
+            >
+            <a href="" class="article__link article__link--cancel"
+              >Cancel Order</a
+            >
+          </nav>
+        </footer>
+      </article>
+    </main>
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/a-sauvaget"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Alexandre Sauvaget</a
+      >.
+    </footer>
+  </body>
 </html>

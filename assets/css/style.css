@@ -1,13 +1,118 @@
+:root {
+  --color--palerblue: hsl(225, 100%, 98%);
+  --color-paleblue: hsl(225, 100%, 94%);
+  --color-brightblue: hsl(245, 75%, 52%)
+  --color-darkblue:  hsl(223, 47%, 23%);
+  --color-desaturedblue: hsl(224, 23%, 55%);
+}
+
 /* STYLE FRONTEND MENTOR */
 .attribution {
     font-size: 0.688rem;
     text-align: center;
-    position: fixed;
-    bottom:  0;
-    padding: 1rem;
     width: 100%;
+    height: 5vh;
+    margin-top: 2rem;
   }
 
   .attribution a {
-    color: var(--color-blue);
+    color: blue;
   }
+
+/* Generic rules */
+
+  body {
+    background: url('../images/pattern-background-desktop.svg') no-repeat;
+    background-color: var(--color-paleblue);
+    background-size: cover;
+
+    font-family: 'Red Hat Display', sans-serif;
+
+    text-align: center;
+  }
+
+  @media screen and (max-width: 375px) {
+    body {
+      background-image: url("../images/pattern-background-mobile.svg");
+    }
+  }
+
+p {
+  font-size: 1rem;
+  color: var(--color-desaturedblue)
+}
+
+h1,
+h2 {
+  color: var(--color-darkblue);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* LAYOUT */
+
+.container {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  max-width: 400px;
+  background-color: var(--color--palerblue);
+  border-radius: 1rem;
+}
+
+.article__hero {
+  border-radius: 1rem 1rem 0 0;
+  max-width: 400px;
+}
+
+.article__mainContent {
+ max-width: 350px;
+ margin: 0 auto
+}
+
+.article__footer {
+  max-width: 350px;
+  margin: 0 auto
+}
+
+.article__icon {
+  margin-right: 1rem;
+}
+
+.article__orderSummary {
+  background-color: var(--color-paleblue);
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-radius: .5rem;
+}
+
+.article__orderSummary,
+.article__orderItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article__nav {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 0;
+}
+
+.article__title--subTitle {
+  padding-bottom: .5rem;
+}
