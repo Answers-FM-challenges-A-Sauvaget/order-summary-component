@@ -1,0 +1,13 @@
+/* STYLE FRONTEND MENTOR */
+.attribution {
+    font-size: 0.688rem;
+    text-align: center;
+    position: fixed;
+    bottom:  0;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .attribution a {
+    color: var(--color-blue);
+  }
