@@ -37,6 +37,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+
 ## Author
 
 - Github - [a-sauvaget](https://github.com/a-sauvaget)
